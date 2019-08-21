@@ -37,6 +37,7 @@ class WISG(object):
         self.data['sm'] = json_data['sm']['Value']
         self.data['call'] = json_data['call']['Value']
         print(self.data)
+        return self.data
         pass
 
 
@@ -57,7 +58,8 @@ class WISG(object):
         
         recv_data = resp['Data']
         js = json.loads(recv_data)
-        self.data_decoding(js)
+        
+        return self.data_decoding(js)
 
         pass
 
