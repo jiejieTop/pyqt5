@@ -120,6 +120,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.LineEdit_8.setText(str(self.data['call']))
         self.LineEdit_9.setText(str(self.data['led']))
         self.LineEdit_10.setText(str(self.data['beep']))
+        if(self.data['call']):
+            ui.graphicsView.setVisible(True) 
+        else:
+            ui.graphicsView.setVisible(False) 
         pass
         
         
@@ -141,7 +145,10 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     ui = MainWindow()
-
+    # 隐藏呼叫
+    ui.graphicsView.setVisible(False) 
+    ui.setWindowIcon(QtGui.QIcon('./images/IOTOS.ico'))
+    ui.setWindowTitle("智慧医疗终端")
     #  设置窗口背景图片
     ui.setStyleSheet("#MainWindow{border-image:url(./images/python.jpg);}")
     tencent = WISG()

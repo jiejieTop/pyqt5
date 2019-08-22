@@ -15,7 +15,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.formLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.formLayoutWidget.setGeometry(QtCore.QRect(10, 40, 141, 274))
+        self.formLayoutWidget.setGeometry(QtCore.QRect(10, 40, 141, 333))
         self.formLayoutWidget.setObjectName("formLayoutWidget")
         self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
         self.formLayout.setContentsMargins(0, 0, 0, 0)
@@ -666,6 +666,10 @@ class Ui_MainWindow(object):
         self.pushButton_32 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_32.setGeometry(QtCore.QRect(10, 650, 61, 23))
         self.pushButton_32.setObjectName("pushButton_32")
+        self.graphicsView = QtWidgets.QGraphicsView(self.centralwidget)
+        self.graphicsView.setGeometry(QtCore.QRect(140, 190, 61, 61))
+        self.graphicsView.setStyleSheet("border-image: url(:/call/call.png);")
+        self.graphicsView.setObjectName("graphicsView")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 881, 23))
@@ -802,6 +806,7 @@ class Ui_MainWindow(object):
         self.menu_IoT.setTitle(_translate("MainWindow", "【IoT迷你赛】智慧医疗之输液监控终端"))
         self.menuby.setTitle(_translate("MainWindow", "by杰杰"))
 
+import call_rc
 
 if __name__ == "__main__":
     import sys

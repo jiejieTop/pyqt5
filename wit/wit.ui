@@ -20,7 +20,7 @@
       <x>10</x>
       <y>40</y>
       <width>141</width>
-      <height>274</height>
+      <height>333</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
@@ -1442,6 +1442,19 @@
      <string>LED</string>
     </property>
    </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>190</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/call/call.png);</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -1467,6 +1480,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="images/call.qrc"/>
+ </resources>
  <connections/>
 </ui>

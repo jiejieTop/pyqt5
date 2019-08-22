@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project wit -->
-<!-- Saved: 2019-08-22, 22:39:01 -->
+<!-- Saved: 2019-08-22, 23:15:50 -->
 <!-- Copyright (C) 2019 ,  -->
 <Project version="5.1">
   <Language>en_US</Language>
@@ -16,6 +16,7 @@
     <Source>Tencent.py</Source>
     <Source>Tencent_send.py</Source>
     <Source>Ui_wit.py</Source>
+    <Source>call_rc.py</Source>
     <Source>wit.py</Source>
   </Sources>
   <Forms>
