@@ -14,12 +14,13 @@ class WISG(object):
         self.data = {
             'pn':'null',
             'pg':'null',
+            'dn':'null', 
             'bn':0,
             'time':0,
             'lv':0,
             'speed':0,
             'led':0,
-            'beep':1,
+            'beep':0,
             'sm':0,
             'call':0
         }
@@ -36,6 +37,7 @@ class WISG(object):
         self.data['beep'] = json_data['beep']['Value']
         self.data['sm'] = json_data['sm']['Value']
         self.data['call'] = json_data['call']['Value']
+        self.data['dn'] = json_data['dn']['Value']  
         print(self.data)
         return self.data
         pass
